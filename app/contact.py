@@ -8,14 +8,6 @@ class Contact:
     def to_dict(self):
         return self.__dict__
 
-    def __str__(self):
-        return (f"Contact details:\nid: {self.id}\nfirst name: {self.first_name}\n"
-                f"last_name: {self.last_name}\nphone number: {self.phone_number}")
-
-    def __repr__(self):
-        return (f"Contact details:\nid: {self.id}\nfirst name: {self.first_name}\n"
-                f"last_name: {self.last_name}\nphone number: {self.phone_number}")
-
     @classmethod
     def from_dict(cls, dict_contact: dict):
         return cls(
